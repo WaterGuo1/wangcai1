@@ -1,6 +1,53 @@
 <template>
-    <div>Money.vue
-         <Nav />
+    <div>
+  <Layout>
+<p>money.vue</p>
+<p>money.vue</p>
+<p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p>
+
+  </Layout>
+
     </div>
    
 </template>

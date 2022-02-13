@@ -5,10 +5,15 @@ import router from './router'
 import store from './store'
 import { component } from 'vue/types/umd';
 import Nav from '@/components/Nav.vue';
+import Layout from '@/components/Layout.vue';
+
 
 Vue.config.productionTip = false
 
-Vue.component('Nav',Nav)
+Vue.component('Nav',Nav);
+Vue.component('Layout',Layout);
+
+
 
 new Vue({
   router,

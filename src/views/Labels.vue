@@ -1,12 +1,63 @@
 <template>
-    <div>lables.vue
-           <Nav />
+    <div>
+  <Layout>
+<p>Lables.vue</p>
+<p>money.vue</p>
+<p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p><p>money.vue</p>
+<p>money.vue</p>
+
+  </Layout>
+
     </div>
+   
 </template>
+
  <script lang= "ts">
+ 
  export default {
-     name:'Labels'
- }
+     name:'Lables',
+     
+ };
  </script>
 
  <style lang= "scss" scoped>
