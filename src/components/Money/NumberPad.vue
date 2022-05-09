@@ -5,11 +5,11 @@
       <button @click="inputContent">1</button>
       <button @click="inputContent">2</button>
       <button @click="inputContent">3</button>
-      <button>删除</button>
+      <button @click="remove">删除</button>
       <button @click="inputContent">4</button>
       <button @click="inputContent">5</button>
       <button @click="inputContent">6</button>
-      <button >清空</button>
+      <button @click="clear">清空</button>
       <button @click="inputContent">7</button>
       <button @click="inputContent">8</button>
       <button @click="inputContent">9</button>
@@ -45,6 +45,21 @@ export default class NumberPad extends Vue {
    if(this.output.indexOf('.')>=0 && input ==='.'){return}
    this.output +=input;
   }
+
+  remove(){
+if(this.output.length === 1){
+  this.output = '0';
+  }else{
+    this.output=this.output.slice(0,-1);
+  }
+  }
+clear(){
+  this.output = '0';
+}
+
+ok(){
+  
+}
 
 }
 </script>
