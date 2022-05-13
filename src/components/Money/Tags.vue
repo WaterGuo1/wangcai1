@@ -48,7 +48,7 @@ if(name ===''){
 
 <style lang="scss" scoped>
   .tags {
-    // height: 225px;
+    height: 225px;
     font-size: 14px;
     padding: 16px;
     flex-grow: 1;
