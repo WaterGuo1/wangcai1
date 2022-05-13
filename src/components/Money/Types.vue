@@ -9,43 +9,23 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component,Prop } from "vue-property-decorator";
+import { Component,Prop,Watch } from "vue-property-decorator";
+
 @Component
 export default class Types extends Vue {
-  type = "-"; //'-'表示支出'+'表示收入
-
-
-  @Prop(Number)xxx:number|undefined;
-//PropVue.xxx不是data是prop
-//Number告诉Vue.xxx运行时是个number
-//xxx是个属性名
-//number|undefined告诉TS xxx编译时的类型
+@Prop()readonly value!: string;
 
   selectType(type: string) {
-    // type只能是'-''+'中的一个。
     if (type !== "-" && type !== "+") {
       throw new Error("type is unknown");
     }
-    this.type = type;
+    this.$emit('update:value',type);
+    console.log(1)
   }
+
+
 }
 
-// export default {
-//   name: 'Types',
-//   data(){
-//     return{type:'-'//'-'表示支出'+'表示收入
-//     }
-//   },
-//   methods:{
-//     selectType(type){//type只能是'-''+'中的一个。
-//   if(type !=='-' &&type!=='+'){
-//     throw new Error('type is unknown')
-//   }
-//   this.type = type
-//     }
-//   }
-
-// };
 </script>
 
 <style lang="scss" scoped>

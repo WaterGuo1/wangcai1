@@ -30,6 +30,7 @@ toggle(tag:string){
   else{
     this.selectedTags.push(tag)
   };
+  this.$emit('update:value',this.selectedTags)
 
 }
 create(){
@@ -39,19 +40,15 @@ if(name ===''){
  } else if(this.dataSource){
    this.$emit('update:dataSource',[...this.dataSource,name])
  }
-
  }
 
-
 }
-
-
-
   
 </script>
 
 <style lang="scss" scoped>
-  .tags {height: 225px;
+  .tags {
+    // height: 225px;
     font-size: 14px;
     padding: 16px;
     flex-grow: 1;
