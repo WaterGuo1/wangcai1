@@ -1,5 +1,5 @@
 <template>
-    
+ 
   <Layout class-prefix="layout">
  <NumberPad @update:value="onUpdateAmount" @submit="saveRecord"/>
     <Types :value.sync="record.type" />
@@ -45,7 +45,7 @@ const tagList= tagListModel.fetch();
       this.record.notes= value;
     }
     saveRecord(){
-      const record2:RecordItem= recordListModel.Clone(this.record);
+      const record2:Recorditem= recordListModel.Clone(this.record);
          record2.createdAt=new Date();
          this.recordList.push(record2);
          console.log(this.recordList)
