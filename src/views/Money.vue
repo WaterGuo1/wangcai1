@@ -20,10 +20,11 @@ import Types from '@/components/Money/Types.vue';
 
  import Tags from '@/components/Money/Tags.vue';
  import { Component,Model,Watch } from 'vue-property-decorator';
-import { model } from './model';
+import { model as recordListModel } from '@/models/recordListModel';
+import { model as tagListModel } from '@/models/tagListModel';
 
-const recordList= model.fetch()
-
+const recordList= recordListModel.fetch()
+const tagList= tagListModel.fetch();
 
 
 
@@ -32,7 +33,7 @@ const recordList= model.fetch()
    })
  export default class Money extends Vue {
     
-    tags=['衣','食','住','行','休闲','1','2','3','4','5','6','7','8'];
+    tags=tagList;
     recordList:Recorditem[]= JSON.parse(window.localStorage.getItem('recordList')||'[]');
     record:Recorditem ={
       tags:[],notes:'',type:'-',amount:0
@@ -44,7 +45,7 @@ const recordList= model.fetch()
       this.record.notes= value;
     }
     saveRecord(){
-      const record2:RecordItem= model.Clone(this.record);
+      const record2:RecordItem= recordListModel.Clone(this.record);
          record2.createdAt=new Date();
          this.recordList.push(record2);
          console.log(this.recordList)
@@ -53,7 +54,7 @@ const recordList= model.fetch()
 
     @Watch('recordList')
     onRecordListChange(){
-       model.save(this.recordList)
+       recordListModel.save(this.recordList)
 
 
     }
