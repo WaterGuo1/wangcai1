@@ -5,7 +5,7 @@ type Tag = {
 
 }
 
-export type TagListModel = {
+type TagListModel = {
     data: Tag[]
     fetch: () => Tag[]
     create: (name: string) => 'success' | 'duplicated'
