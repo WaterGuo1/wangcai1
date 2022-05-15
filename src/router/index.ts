@@ -4,10 +4,13 @@ import Home from '../views/Home.vue'
 
 import Money from '@/views/Money.vue'
 import Labels from '@/views/Labels.vue'
+import EditLabel from '@/views/EditLabel.vue'
+
 import Statistics from '@/views/Statistics.vue'
 import  NotFound from '@/views/NotFound.vue'
 
 import { component } from 'vue/types/umd';
+import { Component } from 'vue-property-decorator';
 
 
 Vue.use(VueRouter);
@@ -29,6 +32,12 @@ const routes: Array<RouteConfig> = [
   path:'/statistics',
   component:Statistics
 },
+{
+path:'/labels/edit',
+component:EditLabel
+
+},
+
 {
   path:'*',
   component:NotFound 
