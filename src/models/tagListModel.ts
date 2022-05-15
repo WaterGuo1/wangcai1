@@ -1,4 +1,3 @@
-import Tags from '../components/Money/Tags.vue';
 const localStorageKeyName = 'tagList';
 type Tag = {
     id: string;
@@ -14,7 +13,7 @@ type TagListModel = {
 
 }
 const model = {
-    data: [],
+    data: [] as Tag[],
 
     fetch() {
         this.data = JSON.parse(window.localStorage.getItem('localStorageKeyName') || '[]');
