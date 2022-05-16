@@ -19,10 +19,15 @@
 <script lang="ts">
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
+type Tag= {
+id:string;
+name:string;
+
+}
 
 @Component
 export default class Tags extends Vue {
-  @Prop() dataSource: string[] | undefined;
+  @Prop() dataSource: Tag[] | undefined;
   selectedTags: string[] = [];
 
   toggle(tag: string) {
