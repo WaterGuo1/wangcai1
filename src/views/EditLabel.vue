@@ -6,6 +6,7 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { model as tagListModel } from "@/models/tagListModel";
+// import path from "path";
 
 @Component
 export default class EditLabel extends Vue {
@@ -14,8 +15,11 @@ export default class EditLabel extends Vue {
     tagListModel.fetch();
     const tags = tagListModel.data;
     const tag = tags.filter((t) => t.id === id)[0];
+          
+
     if (tag) {
       console.log(tag);
+      console.log(1);
     } else {
       this.$router.replace("/404");
     }
