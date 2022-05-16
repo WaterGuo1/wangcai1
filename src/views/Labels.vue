@@ -2,12 +2,14 @@ import icon from '@/components/icon.vue';
 <template>
   <div>
     <Layout>
-      <ol class="tags">
-        <li v-for="tag in tags" :key="tag.id">
+      <div class="tags">
+        <router-link class="tag"
+        v-for="tag in tags" :key="tag.id"
+        :to="`/Labels/edit/${tag.id}`">
           <span>{{ tag.name }}</span>
           <icon name="right" />
-        </li>
-      </ol>
+        </router-link>
+      </div>
       <div class="createTag-wrapper">
         <button class="createTag" @click="createTag">新建标签</button>
       </div>
@@ -19,6 +21,7 @@ import icon from '@/components/icon.vue';
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { model as tagListModel } from "@/models/tagListModel";
+import Tags from '../components/Money/Tags.vue';
 
 tagListModel.fetch();
 @Component
@@ -43,7 +46,7 @@ export default class Labels extends Vue {
   background: white;
   font-size: 16px;
   padding-left: 16px;
-  > li {
+  > .tag {
     min-height: 44px;
     display: flex;
     align-items: center;
