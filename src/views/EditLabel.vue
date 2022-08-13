@@ -2,7 +2,7 @@
 <template>
   <Layout>
     <div>
-      <Icon name="right"/>
+      <icon name="left"/>
       <span>
         编辑标签
       </span>
@@ -14,7 +14,8 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { model as tagListModel } from "@/models/tagListModel";
-import Icon from "@/components/icon.vue";
+
+import icon from '@/components/icon.vue';
 // import path from "path";
 
 @Component
