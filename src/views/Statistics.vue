@@ -2,7 +2,7 @@
     <div>
   <Layout>
 <p>Statistics.vue</p>
-<p>money.vue</p>
+<p>6</p>
 <p>money.vue</p>
 <p>money.vue</p><p>money.vue</p>
 <p>money.vue</p><p>money.vue</p>

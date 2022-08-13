@@ -1,4 +1,3 @@
-import icon from '@/components/icon.vue';
 <template>
   <div>
     <Layout>
@@ -22,6 +21,7 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { model as tagListModel } from "@/models/tagListModel";
 import Tags from '../components/Money/Tags.vue';
+import icon from '@/components/icon.vue';
 
 tagListModel.fetch();
 @Component
