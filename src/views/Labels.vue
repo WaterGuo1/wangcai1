@@ -24,8 +24,8 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { model as tagListModel } from "@/models/tagListModel";
 import Tags from '../components/Money/Tags.vue';
-// import icon from '@/components/icon.vue';
-// 已声明，但从未使用
+import icon from '@/components/icon.vue';
+
 tagListModel.fetch();
 @Component
 export default class Labels extends Vue {
