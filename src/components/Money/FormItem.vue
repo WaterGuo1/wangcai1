@@ -1,7 +1,7 @@
 <template>
   <div>
     {{value}}
-    <label class="notes">
+    <label class="formItem">
       
       <span class="name">{{this.fieldName}}</span>
       <input type="text"
@@ -31,9 +31,9 @@ onValueChanged(value:string){
 </script>
 
 <style lang="scss" scoped>
-  .notes {
+  .formItem {
+    background:white;
     font-size: 14px;
-    background: #f5f5f5;
     padding-left: 16px;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ onValueChanged(value:string){
       padding-right: 16px;
     }
     input {
-      height: 64px;
+      height: 40px;
       flex-grow: 1;
       background: transparent;
       border: none;

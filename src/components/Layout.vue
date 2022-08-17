@@ -14,7 +14,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav-wrapper {
+.layout-wrapper {
+     background:rgb(244,244,244);
   display: flex;
   flex-direction: column;
   height: 100vh;
