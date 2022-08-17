@@ -19,7 +19,9 @@ import Notes from '../components/Money/Notes.vue';
 
 // import path from "path";
 
-@Component
+@Component({
+  components: {Notes}
+})
 export default class EditLabel extends Vue {
   created() {
     const id = this.$route.params.id;
